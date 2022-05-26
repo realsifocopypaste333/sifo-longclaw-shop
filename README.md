@@ -110,7 +110,9 @@ python manage.py runserver
 
 127.0.0.1:8000
 
+TO ACCESS WEB ADMIN
 
+12.0.0.1:8000/admin
 
 ==================================
 

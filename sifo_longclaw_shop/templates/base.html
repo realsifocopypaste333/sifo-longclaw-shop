@@ -13,8 +13,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
+         {# Global stylesheets #}
         <link rel="stylesheet" type="text/css" href="{% static 'css/sifo_longclaw_shop.css' %}">
-
+        <link rel="stylesheet" type="text/css" href="{% static 'css/all.css' %}">
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
@@ -22,16 +23,27 @@
 
     <body class="{% block body_class %}{% endblock %}">
         <div class="layout">
-        {% wagtailuserbar %}
-        <div class="header"></div>
+            {% wagtailuserbar %}
+            <div class="header">
+                <div>
+                   
+                <div>
+                    <a class="header-brand" href="/"> TOKO SIFO </a>
+                </div>
+                <div>
+                    <a href="{% url 'longclaw_basket' %}"><span id="basket-item-count"> </span><i class="fas fa-shopping-basket fa-lg" aria-hidden="true"></i></a>
+                </div>
+            </div>
 
-        <div class="main">
-        {% block content %}{% endblock %}
+            <div class="main">
+            {% block content %}{% endblock %}
+            </div>
         </div>
-        </div>
+
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/sifo_longclaw_shop.js' %}"></script>
-
+        
+         <script type="text/javascript" src="{% static 'js/sifo_longclaw_shop.js' %}"></script>
+        
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}
         {% endblock %}
