@@ -14,7 +14,7 @@ this project is fork from https://github.com/JamesRamm/longclaw
 
 ==============
 
-1. intall gnu linux os 
+1. install gnu linux os 
 
 i recommend av linux mx edition
 
@@ -112,11 +112,11 @@ python manage.py runserver
 
 TO ACCESS WEB ADMIN
 
-12.0.0.1:8000/admin
+127.0.0.1:8000/admin
 
 ==================================
 
-
+===================================
 
 ok thanks :)
 
